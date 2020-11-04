@@ -24,3 +24,5 @@ function generateMessage () {
 }
 
 console.log(generateMessage())
+
+//This is the first version
