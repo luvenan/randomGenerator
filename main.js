@@ -9,6 +9,9 @@ const location = ['while lying in bed', 'in the kitchen', 'on your couch', 'in t
 //With whom?
 const withWhom = ['your imaginary friend', 'your mom, over zoom', 'yourself', 'one of the fair folk'];
 
+//Listening to what?
+const song = ['"Disease" by Matchbox 20', '"Fever", by Peggy Lee', '"It\'s The End Of The World As We Know It (And I Feel Fine)" by R.E.M.', '"Pandemic Flu" by Seanan McGuire']
+
 //function to randomly select each of four possibilities:
 function createRandomIndex () {
     const randomIndex = Math.floor(Math.random() * 4)
@@ -20,8 +23,11 @@ function generateMessage () {
     let a = createRandomIndex();
     let b = createRandomIndex();
     let c = createRandomIndex();
-    return 'You should ' + toDo[a] + ' ' + location[b] + ' with ' + withWhom[c] + '.';
+    let d = createRandomIndex();
+    return 'You should ' + toDo[a] + ' ' + location[b] + ' with ' + withWhom[c] + ', while listening to ' + song [d] + '.';
 }
+
+// This version is fully functional with a 4th option
 
 console.log(generateMessage())
 
