@@ -27,6 +27,8 @@ function generateMessage () {
     return 'You should ' + toDo[a] + ' ' + location[b] + ' with ' + withWhom[c] + ', while listening to ' + song [d] + '.';
 }
 
+// This version is fully functional with a 4th option
+
 console.log(generateMessage())
 
 //This is the first version
